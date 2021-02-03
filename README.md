@@ -52,16 +52,16 @@ III. Testing model
 2. [One-hot encoding 'Rate', 'Genre', 'Season', 'Year', 'Month' columns](https://github.com/dss-15th/reg-repo-5/blob/master/2nd_onehot_encoding.py)
 3. [Removing outliers of quantile 25 and 75 in additional to one-hot encoding](https://github.com/dss-15th/reg-repo-5/blob/master/3rd_onehot_encoding%2Bremove_outliers.py)
 4. [Second removal of outliers to 3rd trial](https://github.com/dss-15th/reg-repo-5/blob/master/4th_onehot_encoding%2Bremove_outliers_twice.py)
- * Label : Audience
-![image](https://user-images.githubusercontent.com/72846750/102709442-0a74ab80-42ee-11eb-86a3-a2ba7eabfc0f.png)
-  - Since Audience Data is placed with the outliers in upper fences, I supposed, if necessary, outliers will be elimated one by one within upper fences.
-![image](https://user-images.githubusercontent.com/28764376/106708564-6c873700-6636-11eb-9188-ffda84190e7b.png)
-  - RMSE of Test Data decreased from 1.73 to 0.75 after continuous data cleansing.
- * Label : Sales
-![image](https://user-images.githubusercontent.com/28764376/106712715-afe4a400-663c-11eb-933e-9cb9cdfa286d.png)
-  - values of Sales is very skewed, which lead to removing outliers.
-![image](https://user-images.githubusercontent.com/28764376/106708498-52e5ef80-6636-11eb-91d7-b0354c70f212.png)
-  - RMSE of Test Data decreased from 12,893.35 to 3,892.27 after continuous data cleansing.
+- Label : Audience
+ ![image](https://user-images.githubusercontent.com/72846750/102709442-0a74ab80-42ee-11eb-86a3-a2ba7eabfc0f.png)
+ * Since Audience Data is placed with the outliers in upper fences, I supposed, if necessary, outliers will be elimated one by one within upper fences.
+ ![image](https://user-images.githubusercontent.com/28764376/106708564-6c873700-6636-11eb-9188-ffda84190e7b.png)
+ * RMSE of Test Data decreased from 1.73 to 0.75 after continuous data cleansing.
+- Label : Sales
+ ![image](https://user-images.githubusercontent.com/28764376/106712715-afe4a400-663c-11eb-933e-9cb9cdfa286d.png)
+ * values of Sales is very skewed, which lead to removing outliers.
+ ![image](https://user-images.githubusercontent.com/28764376/106708498-52e5ef80-6636-11eb-91d7-b0354c70f212.png)
+ * RMSE of Test Data decreased from 12,893.35 to 3,892.27 after continuous data cleansing.
 .   
 Built with
 ----------
