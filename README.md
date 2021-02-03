@@ -13,17 +13,14 @@ Prerequisites:
 Getting Started
 ---------------
 ##### Packages to install
-* matplotlib.pyplot
-* seaborn
-* warnings
-* pandas
-* numpy
-* sklearn.preprocessing
-* sklearn.model_selection
-* sklearn.linear_model
-* sklearn.metrics
-
-
+- this project was built on Python 3 with following installations:
+```
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install seaborn
+pip install scikit-learn
+```
 ##### Dataset
 - (811rowsx10columns)
 - Feature
