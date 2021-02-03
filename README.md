@@ -1,9 +1,8 @@
 Regression_Project
 
-Predicting the Movie's Revenue and Audience with Linear Regression Model.
-=========================================================================
-When having a data which we could know before a film was released, what would the Revenue and Audience of the film be predicted?
-We strove to find out the best Linear Regression Model to predict its Revenue and Audience.
+Predicting Movie Revenue and Number of Audience with Linear Regression
+======================================================================
+After the EDA with the Korean movie data, we decided to continue on with predicting sales and number of audience of a film. In this Regression Project, Linear Regression model was used from the beginning to the end with various ways of manipulation of the column data.
 
 Getting Started
 ---------------
@@ -43,7 +42,9 @@ II. Data Visualization
 - Two Histograms of Sales and Audience are right skewed, which means most of movies are struggling to be successful.
   Plus, we found ourselves in trouble to predict those two as imbalance data. 
 - Since Number of Screen has correlated closely to the Sales and Audience, the histogram of Screen is right skewed as well.
-- We could see that Top 5 Distributor are taking over this industry. 
+- We could see that Top 5 Distributor are taking over this industry.
+- [detailed visualization outcome](https://github.com/dss-15th/reg-repo-5/blob/master/Sales_analysis/01_Sales_visualizing.ipynb)
+- [detailed data exploration](https://github.com/dss-15th/reg-repo-5/blob/master/Sales_analysis/04_Sales_data_exploring.ipynb)
 
 III. Testing model
 - chose to  with a RMSE indication to see how much better the model is than just predicting without adequate data cleansing.
@@ -65,13 +66,27 @@ III. Testing model
 
 Conclusion
 ----------
-(Detailed procedures and graph outcomes can be viewed in the [Jupyter files](https://github.com/dss-15th/reg-repo-5/tree/master/Sales_analysis))
-
-
+(Detailed procedures and graph outcomes can be viewed from Jupyter Notebook in Sales_analysis folder)
+- the prediction results of first two ways differentiated the use of ordinal encoder and one-hot encoding
+- removing outliers greatly helped decreasing the rmse 
+- there could have been other ways to handle with the values less than 1 and the skewed data:
+  * removing data that lies below a certain point we assign (ex. drop rows with sales below 1,000,000)
+    ```
+    dele = movie[movie['Sales'] < 1].index
+    movie.drop(dele, inplace=True)
+    ```
+    - through this, the rmse decreased from 13,174.05 to 4,128.56 [detailed procedure](https://github.com/dss-15th/reg-repo-5/blob/master/Sales_analysis/08_Sales_feedback_test(drop.sales%20below%201).ipynb)
+  * calculating the log value of sales to normalize skewed data
+    ```
+    movie['log_sales'] = np.log1p(movie['Sales'])
+    ```
+    - rmse decreased from 1.5 to 1.1 [detailed procedure](https://github.com/dss-15th/reg-repo-5/blob/master/Sales_analysis/08_Sales_feedback_test(log_sales).ipynb)
+    
 Built with
 ----------
 * 김예지
   * Data cleansing, visualizing, and testing model on Sales.
+  * Jupyter notebook code all code files upload, additional trials of removing data and converting to log values after presentation and conclusion
   * Github : https://github.com/yeji0701
 * 방희란
   * Data cleansing, Data visualizing and Testing model on Audience.
