@@ -42,7 +42,9 @@ II. Data Visualization
 - Two Histograms of Sales and Audience are right skewed, which means most of movies are struggling to be successful.
   Plus, we found ourselves in trouble to predict those two as imbalance data. 
 - Since Number of Screen has correlated closely to the Sales and Audience, the histogram of Screen is right skewed as well.
-- We could see that Top 5 Distributor are taking over this industry. 
+- We could see that Top 5 Distributor are taking over this industry.
+- [detailed visualization outcome](https://github.com/dss-15th/reg-repo-5/blob/master/Sales_analysis/01_Sales_visualizing.ipynb)
+- [detailed data exploration](https://github.com/dss-15th/reg-repo-5/blob/master/Sales_analysis/04_Sales_data_exploring.ipynb)
 
 III. Testing model
 - chose to  with a RMSE indication to see how much better the model is than just predicting without adequate data cleansing.
@@ -64,7 +66,7 @@ III. Testing model
 
 Conclusion
 ----------
-(Detailed procedures and graph outcomes can be viewed in the [Jupyter files](https://github.com/dss-15th/reg-repo-5/tree/master/Sales_analysis))
+(Detailed procedures and graph outcomes can be viewed from Jupyter Notebook in Sales_analysis folder)
 - the prediction results of first two ways differentiated the use of ordinal encoder and one-hot encoding
 - removing outliers greatly helped decreasing the rmse 
 - there could have been other ways to handle with the values less than 1 and the skewed data:
