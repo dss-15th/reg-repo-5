@@ -63,6 +63,11 @@ III. Testing model
   ![image](https://user-images.githubusercontent.com/28764376/106708498-52e5ef80-6636-11eb-91d7-b0354c70f212.png)
   * RMSE of Test Data decreased from 12,893.35 to 3,892.27 after continuous data cleansing.
 
+Conclusion
+----------
+(Detailed procedures and graph outcomes can be viewed in the [Jupyter files](https://github.com/dss-15th/reg-repo-5/tree/master/Sales_analysis))
+
+
 Built with
 ----------
 * 김예지
