@@ -2,7 +2,7 @@ Regression_Project
 
 Predicting Movie Revenue and Number of Audience with Linear Regression
 ======================================================================
-After the EDA with the Korean movie data, we decided to continue on with predicting sales and number of audience of a film. In this Regression Project, Linear Regression model was used from the beginning to the end with various ways of manipulation of the column data.
+After the EDA with the Korean movie data, we decided to continue on with predicting sales and number of audience of a film. In this Regression Project, Linear Regression model was used from the beginning with various manipulation of the column data and calculated RMSE(Root Mean Squared Error) to evaluate the difference between actual and predicted value. 
 
 Getting Started
 ---------------
@@ -66,6 +66,7 @@ III. Testing model
 
 Conclusion
 ----------
+We could say that the process of one-hot encoding and removal of outliers performed well on predicting the number of 'Audience'. As for 'Sales', although the RMSE decreased greatly, we could not say the same process predicted well. First because, the value was too big to intuitively see if the last RMSE is small enough to say it is a good predicted value. Second, there was no data of cost for each movie which we think is an important feature to know the revenue. 
 (Detailed procedures and graph outcomes can be viewed from Jupyter Notebook in Sales_analysis folder)
 - the prediction results of first two ways differentiated the use of ordinal encoder and one-hot encoding
 - removing outliers greatly helped decreasing the rmse 
